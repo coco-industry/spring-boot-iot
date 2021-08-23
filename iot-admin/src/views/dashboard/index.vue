@@ -8,10 +8,11 @@
 
 <script>
 import { info } from '@/api/dashboard'
+import CountTo from 'vue-count-to'
 
 export default {
   components: {
-
+    CountTo
   },
   data() {
     return {
