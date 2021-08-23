@@ -118,13 +118,14 @@
 import { readTopic, updateTopic } from '@/api/topic'
 import { listGoods } from '@/api/goods'
 import { createStorage, uploadPath } from '@/api/storage'
+import BackToTop from '@/components/BackToTop'
 import Editor from '@tinymce/tinymce-vue'
 import Pagination from '@/components/Pagination' // Secondary package based on el-pagination
 import { getToken } from '@/utils/auth'
 
 export default {
   name: 'TopicEdit',
-  components: { Editor, Pagination },
+  components: { BackToTop, Editor, Pagination },
   data() {
     return {
       uploadPath,
